@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sandwich_breads",
+  "info": {
+    "name": "Breads",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isRadioButton": {
+      "type": "boolean"
+    },
+    "data": {
+      "collection": "ingredient"
+    },
+    "description": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

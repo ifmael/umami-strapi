@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_menu_beverage_items",
+  "info": {
+    "name": "BeverageItem",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "extraPrice": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

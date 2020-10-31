@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_menu_beverages",
+  "info": {
+    "name": "beverage",
+    "icon": "cocktail",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "Bebidas:"
+    },
+    "isRadioButton": {
+      "type": "boolean",
+      "required": false,
+      "default": true
+    },
+    "beverages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.beverage-item"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

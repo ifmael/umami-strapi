@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_menu_sides",
+  "info": {
+    "name": "Side",
+    "icon": "box-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "Complementos:"
+    },
+    "isRadioButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "sides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.side-item"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

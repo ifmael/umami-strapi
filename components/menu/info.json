@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_menu_infos",
+  "info": {
+    "name": "info",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_burger_meats",
+  "info": {
+    "name": "Meats",
+    "icon": "drumstick-bite",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isRadioButton": {
+      "type": "boolean"
+    },
+    "data": {
+      "collection": "ingredient"
+    },
+    "description": {
+      "type": "text",
+      "default": "Elige la carne:"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

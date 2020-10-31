@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_menu_side_items",
+  "info": {
+    "name": "SideItem",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "collection": "state"
+    },
+    "product": {
+      "model": "product"
+    },
+    "isRadioButton": {
+      "type": "boolean"
+    },
+    "extraPrice": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

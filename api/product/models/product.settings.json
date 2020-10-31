@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "model": "product-category"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "ingredients": {
+      "collection": "ingredient"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    },
+    "isCustomizable": {
+      "type": "boolean"
+    },
+    "isMenuable": {
+      "type": "boolean"
+    },
+    "configuration": {
+      "type": "dynamiczone",
+      "components": [
+        "burger.meats",
+        "burger.point-cooking",
+        "sandwich.breads"
+      ]
+    },
+    "menu": {
+      "type": "dynamiczone",
+      "components": [
+        "menu.side",
+        "menu.beverage",
+        "menu.info"
+      ]
+    }
+  }
+}

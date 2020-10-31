@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_burger_point_cookings",
+  "info": {
+    "name": "Point Cooking",
+    "icon": "water",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isRadioButton": {
+      "type": "boolean"
+    },
+    "data": {
+      "collection": "state"
+    },
+    "description": {
+      "type": "text",
+      "default": "Escoge el punto:"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
