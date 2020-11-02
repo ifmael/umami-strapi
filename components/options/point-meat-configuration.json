@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_point_meat_configurations",
+  "info": {
+    "name": "PointMeat Configuration",
+    "icon": "fire",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "options",
+  "info": {
+    "name": "Options",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "elements": {
+      "type": "dynamiczone",
+      "components": [
+        "burger.meats",
+        "burger.point-cooking",
+        "sandwich.breads",
+        "menu.beverage",
+        "menu.side"
+      ]
+    }
+  }
+}

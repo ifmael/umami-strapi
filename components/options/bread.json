@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_breads",
+  "info": {
+    "name": "Bread configuration",
+    "icon": "hamburger",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

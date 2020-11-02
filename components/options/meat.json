@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_meats",
+  "info": {
+    "name": "Meat configuration",
+    "icon": "democrat",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

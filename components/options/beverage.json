@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_beverages",
+  "info": {
+    "name": "Beverage Configuration",
+    "icon": "beer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

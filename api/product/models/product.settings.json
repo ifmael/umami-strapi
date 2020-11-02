@@ -52,7 +52,11 @@
       "components": [
         "burger.meats",
         "burger.point-cooking",
-        "sandwich.breads"
+        "sandwich.breads",
+        "options.meat",
+        "options.point-meat-configuration",
+        "options.bread",
+        "menu.side-item"
       ]
     },
     "menu": {
@@ -60,7 +64,9 @@
       "components": [
         "menu.side",
         "menu.beverage",
-        "menu.info"
+        "menu.info",
+        "options.sides",
+        "options.beverage"
       ]
     }
   }

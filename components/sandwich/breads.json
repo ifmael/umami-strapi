@@ -2,7 +2,7 @@
   "collectionName": "components_sandwich_breads",
   "info": {
     "name": "Breads",
-    "icon": "grip-lines",
+    "icon": "bread-slice",
     "description": ""
   },
   "options": {},
@@ -17,7 +17,8 @@
       "collection": "ingredient"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": "Elige el pan:"
     },
     "order": {
       "type": "integer"

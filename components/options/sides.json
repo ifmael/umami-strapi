@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_sides",
+  "info": {
+    "name": "Sides Configuration",
+    "icon": "box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
