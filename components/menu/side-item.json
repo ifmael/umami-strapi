@@ -7,18 +7,11 @@
   },
   "options": {},
   "attributes": {
-    "options": {
-      "collection": "state"
-    },
     "product": {
       "model": "product"
     },
-    "isRadioButton": {
-      "type": "boolean"
-    },
     "extraPrice": {
-      "type": "decimal",
-      "default": 0
+      "type": "decimal"
     }
   }
 }

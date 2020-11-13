@@ -15,13 +15,13 @@
       "type": "boolean",
       "default": true
     },
+    "order": {
+      "type": "integer"
+    },
     "sides": {
       "type": "component",
       "repeatable": true,
       "component": "menu.side-item"
-    },
-    "order": {
-      "type": "integer"
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_types",
+  "info": {
+    "name": "Type Configuration",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "integer"
+    },
+    "states": {
+      "collection": "state"
+    }
+  }
+}
