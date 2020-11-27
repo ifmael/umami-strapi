@@ -12,6 +12,12 @@
     },
     "extraPrice": {
       "type": "decimal"
+    },
+    "options": {
+      "collection": "state"
+    },
+    "isRadioButton": {
+      "type": "boolean"
     }
   }
 }

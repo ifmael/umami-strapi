@@ -68,6 +68,9 @@
         "options.sides",
         "options.beverage"
       ]
+    },
+    "isRadioButton": {
+      "type": "boolean"
     }
   }
 }
