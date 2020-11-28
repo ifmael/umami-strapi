@@ -71,6 +71,9 @@
     },
     "isRadioButton": {
       "type": "boolean"
+    },
+    "isYourTaste": {
+      "type": "boolean"
     }
   }
 }
