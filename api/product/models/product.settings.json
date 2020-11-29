@@ -74,6 +74,9 @@
     },
     "isYourTaste": {
       "type": "boolean"
+    },
+    "isChildrenMenu": {
+      "type": "boolean"
     }
   }
 }
