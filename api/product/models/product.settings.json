@@ -42,10 +42,12 @@
       "required": true
     },
     "isCustomizable": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "isMenuable": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "configuration": {
       "type": "dynamiczone",
@@ -70,13 +72,16 @@
       ]
     },
     "isRadioButton": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "isYourTaste": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "isChildrenMenu": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }

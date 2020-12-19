@@ -13,6 +13,10 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0.5
     }
   }
 }
