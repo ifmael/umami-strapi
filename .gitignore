@@ -112,3 +112,10 @@ license.txt
 exports
 .cache
 build
+
+
+############################
+# HERUKU
+############################
+
+package-lock.json
