@@ -7,7 +7,9 @@ module.exports = ({ env }) => ({
         uri: env("DATABASE_URI"),
         // database: env("DATABASE_NAME"),
       },
-      options: {},
+      options: {
+        ssl: true,
+      },
     },
   },
 });
