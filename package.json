@@ -7,10 +7,12 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "debug": "node --inspect=127.0.0.1:9229 ./node_modules/strapi/bin/strapi.js develop"
   },
   "devDependencies": {},
   "dependencies": {
+    "axios": "^0.21.1",
     "strapi": "3.4.1",
     "strapi-admin": "3.4.1",
     "strapi-connector-mongoose": "3.4.1",
