@@ -15,6 +15,11 @@
       "type": "component",
       "repeatable": false,
       "component": "contact.contact"
+    },
+    "shoppingCart": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.shopping-cart"
     }
   }
 }

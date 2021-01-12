@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shopping_cart_shopping_carts",
+  "info": {
+    "name": "shoppingCart",
+    "icon": "boxes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "burgers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shopping-cart.burger"
+    },
+    "totalPrice": {
+      "type": "decimal"
+    }
+  }
+}
