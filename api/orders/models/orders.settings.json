@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact"
+    }
+  }
+}
