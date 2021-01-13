@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shopping_cart_sides",
+  "info": {
+    "name": "side",
+    "icon": "bacon"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

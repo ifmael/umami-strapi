@@ -21,7 +21,8 @@
       "components": [
         "shopping-cart.menu",
         "shopping-cart.sandwich",
-        "shopping-cart.burger"
+        "shopping-cart.burger",
+        "shopping-cart.side"
       ]
     },
     "totalPrice": {

@@ -16,6 +16,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shopping-cart.sandwich"
+    },
+    "side": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.side"
     }
   }
 }
