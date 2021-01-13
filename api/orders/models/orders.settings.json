@@ -24,7 +24,8 @@
         "shopping-cart.burger",
         "shopping-cart.side",
         "shopping-cart.beverage",
-        "shopping-cart.dessert"
+        "shopping-cart.dessert",
+        "shopping-cart.salad"
       ]
     },
     "totalPrice": {
