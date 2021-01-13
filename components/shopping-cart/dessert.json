@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shopping_cart_desserts",
+  "info": {
+    "name": "dessert",
+    "icon": "birthday-cake"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
