@@ -21,6 +21,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shopping-cart.side"
+    },
+    "beverage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.beverage"
     }
   }
 }

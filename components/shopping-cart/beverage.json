@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shopping_cart_beverages",
+  "info": {
+    "name": "Beverage",
+    "icon": "glass-cheers"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
