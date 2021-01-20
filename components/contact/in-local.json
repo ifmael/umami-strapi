@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_contact_in_locals",
+  "info": {
+    "name": "InLocal",
+    "icon": "shopping-basket"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

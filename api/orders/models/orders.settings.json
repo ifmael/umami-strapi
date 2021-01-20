@@ -11,11 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "contactInfo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "contact.contact"
-    },
     "shoppingCart": {
       "type": "dynamiczone",
       "components": [
@@ -30,6 +25,13 @@
     },
     "totalPrice": {
       "type": "decimal"
+    },
+    "deliveryOptions": {
+      "type": "dynamiczone",
+      "components": [
+        "contact.in-local",
+        "contact.contact"
+      ]
     }
   }
 }
