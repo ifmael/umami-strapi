@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_configurations_more_orders",
+  "info": {
+    "name": "moreOrders",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "moreOrder": {
+      "type": "boolean"
+    },
+    "titleNoMoreOrders": {
+      "type": "string"
+    }
+  }
+}

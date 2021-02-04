@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configurations",
+  "info": {
+    "name": "Configurations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "configuration": {
+      "type": "dynamiczone",
+      "components": [
+        "configurations.more-orders"
+      ]
+    }
+  }
+}
