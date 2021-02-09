@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "configurations.more-orders",
-        "configurations.minimum-payment"
+        "configurations.minimum-payment",
+        "configurations.schedule"
       ]
     }
   }

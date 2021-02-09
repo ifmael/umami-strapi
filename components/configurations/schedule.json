@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_configurations_schedules",
+  "info": {
+    "name": "schedule",
+    "icon": "hourglass-end",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "openingTime": {
+      "type": "time"
+    },
+    "closingTime": {
+      "type": "time"
+    },
+    "initTimeLastSection": {
+      "type": "time"
+    },
+    "lastTimiUsualSection": {
+      "type": "time"
+    },
+    "lastTimelatestSection": {
+      "type": "time"
+    }
+  }
+}
