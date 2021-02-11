@@ -21,7 +21,8 @@
         "burger.point-cooking",
         "sandwich.breads",
         "menu.beverage",
-        "menu.side"
+        "menu.side",
+        "options.days"
       ]
     }
   }

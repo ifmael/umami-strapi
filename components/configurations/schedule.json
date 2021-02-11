@@ -8,19 +8,34 @@
   "options": {},
   "attributes": {
     "openingTime": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "closingTime": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "initTimeLastSection": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "lastTimiUsualSection": {
-      "type": "time"
+      "type": "time",
+      "required": true
     },
     "lastTimelatestSection": {
-      "type": "time"
+      "type": "time",
+      "required": true
+    },
+    "days": {
+      "type": "component",
+      "repeatable": true,
+      "component": "options.days",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true
     }
   }
 }
