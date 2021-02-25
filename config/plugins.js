@@ -4,9 +4,9 @@ module.exports = ({ env }) => ({
     providerOptions: {
       accessKeyId: env("AWS_ACCESS_KEY_ID"),
       secretAccessKey: env("AWS_ACCESS_SECRET"),
-      region: "eu-west-3",
+      region: "eu-west-1",
       params: {
-        Bucket: "umami-burger",
+        Bucket: "umami-images",
       },
     },
   },
