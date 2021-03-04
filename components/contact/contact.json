@@ -27,6 +27,9 @@
     "street": {
       "type": "string",
       "required": true
+    },
+    "time": {
+      "type": "time"
     }
   }
 }

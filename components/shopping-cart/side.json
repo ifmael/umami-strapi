@@ -2,12 +2,16 @@
   "collectionName": "components_shopping_cart_sides",
   "info": {
     "name": "side",
-    "icon": "bacon"
+    "icon": "bacon",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
