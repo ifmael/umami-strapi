@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const { removeDiacritics } = require("./orders.functions");
+const { removeDiacritics } = require("./diacriatics");
 
 const ConectorPlugin = (() => {
   /**
@@ -69,8 +69,6 @@ const ConectorPlugin = (() => {
 
     texto(text) {
       const newText = removeDiacritics(text);
-      console.log("@@@@ operaciones @@@@@");
-      console.log(this.operaciones);
       this.operaciones.push(
         new ConectorPlugin.OperacionTicket(
           ConectorPlugin.Constantes.AccionText,
@@ -263,15 +261,21 @@ const ConectorPlugin = (() => {
     }
 
     async imprimirEn(nombreImpresora) {
-      const payload = {
-        operaciones: this.operaciones,
-        impresora: nombreImpresora,
-      };
-      const respuestaRaw = await fetch(this.ruta + "/imprimir", {
-        method: "POST",
-        body: JSON.stringify(payload),
-      });
-      return await respuestaRaw.json();
+      try {
+        const payload = {
+          operaciones: this.operaciones,
+          impresora: nombreImpresora,
+        };
+        const respuestaRaw = await fetch(this.ruta + "/imprimir", {
+          method: "POST",
+          body: JSON.stringify(payload),
+        });
+
+        return await respuestaRaw.json();
+      } catch (error) {
+        console.log(error);
+        return false;
+      }
     }
   }
 
