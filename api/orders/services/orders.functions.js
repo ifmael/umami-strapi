@@ -58,7 +58,9 @@ const textBurger = (burger) => {
           .replace(/·/g, "-")
       : "";
 
-    return `${titleAndPrice}\n${tab}- ${burger.meatPoint}\n${tab}- ${burger.typeOfMeat}\n${textIndredients}`;
+    const meatPoint = burger.meatPoint ? `- ${burger.meatPoint}\n${tab}` : "";
+
+    return `${titleAndPrice}\n${tab}${meatPoint}- ${burger.typeOfMeat}\n${textIndredients}`;
   } catch (error) {
     console.log(error);
   }
