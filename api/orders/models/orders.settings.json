@@ -32,6 +32,9 @@
         "contact.in-local",
         "contact.contact"
       ]
+    },
+    "paymentMethod": {
+      "model": "payment-methods"
     }
   }
 }

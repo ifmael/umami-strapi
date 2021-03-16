@@ -92,7 +92,7 @@ const generateDocument = (orderInput, conector, constantes) => {
   const deliveryHomeComponent = "contact.contact";
 
   const line = "=================================";
-  const { deliveryOptions, shoppingCart } = orderInput;
+  const { deliveryOptions, shoppingCart, paymentMethod } = orderInput;
   conector.cortar();
 
   // Header
@@ -125,6 +125,8 @@ const generateDocument = (orderInput, conector, constantes) => {
     deliveryInfo.time &&
       conector.texto(`Hora: ${deliveryInfo.time.slice(0, 5)}\n`);
   }
+  paymentMethod.name &&
+    conector.texto(`Metodo de pago: ${paymentMethod.name}\n`);
   conector.establecerJustificacion(constantes.AlineacionCentro);
   conector.texto(line);
   conector.feed(2);
