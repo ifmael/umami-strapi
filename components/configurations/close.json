@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_configurations_closes",
+  "info": {
+    "name": "Close",
+    "icon": "door-closed"
+  },
+  "options": {},
+  "attributes": {
+    "isClose": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

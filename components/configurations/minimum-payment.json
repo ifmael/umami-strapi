@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_configurations_minimum_payments",
+  "info": {
+    "name": "MinimumPayment",
+    "icon": "credit-card"
+  },
+  "options": {},
+  "attributes": {
+    "min": {
+      "type": "decimal"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

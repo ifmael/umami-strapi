@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "days",
+  "info": {
+    "name": "Days"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "key": {
+      "type": "integer"
+    }
+  }
+}

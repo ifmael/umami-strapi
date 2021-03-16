@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "printing_errors",
+  "info": {
+    "name": "Printing Errors",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "OK",
+        "KO",
+        "UNFIXED"
+      ],
+      "default": "KO"
+    },
+    "order": {
+      "model": "orders"
+    }
+  }
+}

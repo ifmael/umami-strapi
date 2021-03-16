@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shopping_cart_burgers",
+  "info": {
+    "name": "burger",
+    "icon": "shopping-cart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "typeOfMeat": {
+      "type": "string",
+      "required": true
+    },
+    "meatPoint": {
+      "type": "string",
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "ingredients": {
+      "type": "string"
+    }
+  }
+}

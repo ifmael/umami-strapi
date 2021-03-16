@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_contact_contacts",
+  "info": {
+    "name": "AtHome",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "block": {
+      "type": "string"
+    },
+    "flat": {
+      "type": "string"
+    },
+    "locality": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "time"
+    }
+  }
+}

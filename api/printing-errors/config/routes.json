@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/printing-errors",
+      "handler": "printing-errors.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/printing-errors/count",
+      "handler": "printing-errors.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/printing-errors/:id",
+      "handler": "printing-errors.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/printing-errors",
+      "handler": "printing-errors.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/printing-errors/:id",
+      "handler": "printing-errors.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/printing-errors/:id",
+      "handler": "printing-errors.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

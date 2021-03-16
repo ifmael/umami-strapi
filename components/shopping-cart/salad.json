@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shopping_cart_salads",
+  "info": {
+    "name": "Salad",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

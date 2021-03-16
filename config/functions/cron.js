@@ -1,4 +1,8 @@
-'use strict';
+"use strict";
+const { ConectorPlugin } = require("../../api/orders/services/ConectorPlugin");
+const {
+  generateDocument,
+} = require("../../api/orders/services/orders.functions");
 
 /**
  * Cron config that gives you an opportunity
@@ -11,11 +15,54 @@
  */
 
 module.exports = {
-  /**
-   * Simple example.
-   * Every monday at 1am.
-   */
-  // '0 1 * * 1': () => {
-  //
-  // }
+  "1/1 * * * *": async () => {
+    try {
+      const errors = await strapi.query("printing-errors").find({
+        status: "KO",
+      });
+
+      if (Array.isArray(errors) && errors.length > 0) {
+        for (const error of errors) {
+          const conector = new ConectorPlugin();
+          const constantes = ConectorPlugin.Constantes;
+          const printerName = "printer-01";
+
+          generateDocument(error.order, conector, constantes);
+
+          conector.imprimirEn(printerName).then(
+            async (printed) => {
+              if (printed) {
+                strapi.services["printing-errors"].fixError(
+                  error.id,
+                  error.order.id
+                );
+              }
+            },
+            (error) => {
+              console.log(error);
+            }
+          );
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  "30 00 * * *": async () => {
+    try {
+      const errors = await strapi.query("printing-errors").find({
+        status: "KO",
+      });
+
+      if (Array.isArray(errors) && errors.length > 0) {
+        for (const error of errors) {
+          strapi.services["printing-errors"]
+            .unfixedError(error.id)
+            .catch((error) => console.log(error));
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  },
 };

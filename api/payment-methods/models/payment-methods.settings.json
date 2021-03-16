@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ingredients",
+  "collectionName": "payment_methods",
   "info": {
-    "name": "Ingredient",
+    "name": "Payment Methods",
     "description": ""
   },
   "options": {
@@ -13,13 +13,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "price": {
-      "type": "decimal",
-      "default": 0.5
-    },
-    "showAddExtraIngredient": {
-      "type": "boolean"
     }
   }
 }

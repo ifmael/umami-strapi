@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shoppingCart": {
+      "type": "dynamiczone",
+      "components": [
+        "shopping-cart.menu",
+        "shopping-cart.sandwich",
+        "shopping-cart.burger",
+        "shopping-cart.side",
+        "shopping-cart.beverage",
+        "shopping-cart.dessert",
+        "shopping-cart.salad"
+      ]
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "deliveryOptions": {
+      "type": "dynamiczone",
+      "components": [
+        "contact.in-local",
+        "contact.contact"
+      ]
+    },
+    "paymentMethod": {
+      "model": "payment-methods"
+    }
+  }
+}

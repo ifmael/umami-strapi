@@ -8,11 +8,11 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "debug": "node --inspect=127.0.0.1:9229 ./node_modules/strapi/bin/strapi.js develop"
+    "debug": "npx nodemon --inspect=0.0.0.0:9228 server.js"
   },
   "devDependencies": {},
   "dependencies": {
-    "axios": "^0.21.1",
+    "node-fetch": "^2.6.1",
     "strapi": "3.4.1",
     "strapi-admin": "3.4.1",
     "strapi-connector-mongoose": "3.4.1",

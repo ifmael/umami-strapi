@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shopping_cart_menus",
+  "info": {
+    "name": "Menu",
+    "icon": "comment-dots",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "burger": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.burger"
+    },
+    "sandwich": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.sandwich"
+    },
+    "side": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.side"
+    },
+    "beverage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shopping-cart.beverage"
+    }
+  }
+}
