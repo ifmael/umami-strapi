@@ -1,6 +1,8 @@
 const fetch = require("node-fetch");
 const { removeDiacritics } = require("./diacriatics");
 
+require("dotenv").config();
+
 const ConectorPlugin = (() => {
   /**
    * Una clase para interactuar con el plugin
@@ -17,9 +19,7 @@ const ConectorPlugin = (() => {
   }
 
   class ConectorPlugin {
-    // static URL_PLUGIN_POR_DEFECTO = "http://localhost:8000";
-    static URL_PLUGIN_POR_DEFECTO = "http://84.77.153.111:8000";
-    // static URL_PLUGIN_POR_DEFECTO = "http://umami-burger.ddns.net:8000";
+    static URL_PLUGIN_POR_DEFECTO = process.env.UMAMI_HOST;
     static OperacionTicket = Operacion;
     static Constantes = {
       AccionTextoConAcentos: "textoacentos",

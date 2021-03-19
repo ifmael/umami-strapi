@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
     "node-fetch": "^2.6.1",
     "strapi": "3.4.1",
     "strapi-admin": "3.4.1",
