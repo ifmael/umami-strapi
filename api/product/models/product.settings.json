@@ -58,7 +58,8 @@
         "options.meat",
         "options.point-meat-configuration",
         "options.bread",
-        "options.type"
+        "options.type",
+        "options.side-ingredients-configuration"
       ]
     },
     "menu": {
@@ -82,6 +83,9 @@
     "isChildrenMenu": {
       "type": "boolean",
       "default": false
+    },
+    "customiseSideIngredients": {
+      "type": "boolean"
     }
   }
 }

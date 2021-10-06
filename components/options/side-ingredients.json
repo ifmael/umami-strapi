@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_options_side_ingredients",
+  "info": {
+    "name": "Side Ingredients",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredients": {
+      "collection": "ingredient"
+    }
+  }
+}

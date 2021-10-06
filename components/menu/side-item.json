@@ -13,10 +13,13 @@
     "extraPrice": {
       "type": "decimal"
     },
-    "options": {
+    "states": {
       "collection": "state"
     },
-    "isRadioButton": {
+    "isRadioButtonIngredients": {
+      "type": "boolean"
+    },
+    "isRadioButtonConfigurations": {
       "type": "boolean"
     }
   }

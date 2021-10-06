@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_options_side_ingredients_configurations",
+  "info": {
+    "name": "Side Ingredients Configuration",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "options": {
+      "model": "options"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

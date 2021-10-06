@@ -18,7 +18,13 @@
       "type": "decimal",
       "default": 0.5
     },
-    "showAddExtraIngredient": {
+    "showAddExtraIngredientBurguer": {
+      "type": "boolean"
+    },
+    "showAddExtraIngredientSandwich": {
+      "type": "boolean"
+    },
+    "showAddExtraIngredientSalad": {
       "type": "boolean"
     }
   }
