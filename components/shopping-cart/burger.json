@@ -24,6 +24,12 @@
     },
     "ingredients": {
       "type": "string"
+    },
+    "typeOfBread": {
+      "type": "string"
+    },
+    "isChildrenMenu": {
+      "type": "boolean"
     }
   }
 }

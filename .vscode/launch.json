@@ -8,7 +8,7 @@
       "type": "node",
       "request": "attach",
       "name": "Attach to strapi",
-      "port": 9230
+      "port": 9228
     }
   ]
 }

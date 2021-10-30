@@ -35,6 +35,9 @@
     },
     "paymentMethod": {
       "model": "payment-methods"
+    },
+    "supplement": {
+      "type": "integer"
     }
   }
 }
