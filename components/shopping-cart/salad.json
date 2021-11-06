@@ -12,6 +12,9 @@
     },
     "price": {
       "type": "decimal"
+    },
+    "ingredients": {
+      "type": "string"
     }
   }
 }

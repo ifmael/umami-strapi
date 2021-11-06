@@ -85,7 +85,7 @@ const textBurger = (burger) => {
     const typeOfBread = burger?.typeOfBread
       ? `${tab}- ${burger.typeOfBread}\n`
       : "";
-    textIngredients = textIngredients ? `${textIngredients}\n` : "";
+    textIngredients = textIngredients ? `${textIngredients}` : "";
 
     return `${titleAndPrice}${meatPoint}${typeOfMeat}${typeOfBread}${textIngredients}`;
   } catch (error) {
@@ -94,27 +94,79 @@ const textBurger = (burger) => {
 };
 
 const textChildrenBurger = (beverage) => {
-  return `${tab}- ${beverage?.name}`;
+  return `${tab}- ${beverage?.name}\n`;
 };
 
 const textSandwidch = (sandwich) => {
-  const titleAndPrice = justifyLine(
-    sandwich.name,
-    `${sandwich.price.toFixed(2)}E`,
-    printerWidth
-  );
+  try {
+    const titleAndPrice = justifyLine(
+      sandwich.name,
+      `${sandwich.price.toFixed(2)}E`,
+      printerWidth
+    );
 
-  const textIndredients = !!sandwich.ingredients
-    ? sandwich.ingredients
-        .split("||")
-        .map((element, index) =>
-          index === 0 ? `${tab}${element}\n` : `${tab}${element.slice(1)}\n`
-        )
-        .join("")
-        .replace(/·/g, "-")
-    : "";
+    const textIngredients = !!sandwich.ingredients
+      ? sandwich.ingredients
+          .split("||")
+          .map((element) => {
+            const e = element.split(",").map((innerText) => {
+              const ingredientWithPrice = innerText.split("--");
+              const x =
+                ingredientWithPrice.length === 1
+                  ? `${tab}${innerText}\n`
+                  : justifyLine(
+                      `${tab}${ingredientWithPrice[0]}`,
+                      `${Number(ingredientWithPrice[1]).toFixed(2)}E`,
+                      printerWidth
+                    );
+              return x;
+            });
+            return e;
+          })
+          .flat()
+          .join("")
+      : "";
 
-  return `${titleAndPrice}\n${tab}- ${sandwich.typeOfBread}\n${textIndredients}`;
+    return `${titleAndPrice}\n${tab}- ${sandwich.typeOfBread}\n${textIngredients}`;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const textSalad = (salad) => {
+  try {
+    const titleAndPrice = justifyLine(
+      salad.name,
+      `${salad.price.toFixed(2)}E`,
+      printerWidth
+    );
+
+    const textIngredients = !!salad.ingredients
+      ? salad.ingredients
+          .split("||")
+          .map((element) => {
+            const e = element.split(",").map((innerText) => {
+              const ingredientWithPrice = innerText.split("--");
+              const x =
+                ingredientWithPrice.length === 1
+                  ? `${tab}${innerText}\n`
+                  : justifyLine(
+                      `${tab}${ingredientWithPrice[0]}`,
+                      `${Number(ingredientWithPrice[1]).toFixed(2)}E`,
+                      printerWidth
+                    );
+              return x;
+            });
+            return e;
+          })
+          .flat()
+          .join("")
+      : "";
+
+    return `${titleAndPrice}\n${textIngredients}`;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 const generateDocument = (orderInput, conector, constantes) => {
@@ -129,13 +181,22 @@ const generateDocument = (orderInput, conector, constantes) => {
 
     // Header
     conector.establecerJustificacion(constantes.AlineacionCentro);
-    conector.imagenDesdeUrl(umamiLogoUrl);
+    // conector.imagenDesdeUrl(umamiLogoUrl);
+    conector.establecerTamanioFuente(2, 2);
+    conector.texto("UMAMI\n");
+    conector.establecerTamanioFuente(1, 1);
+    conector.feed(1);
+    // conector.establecerJustificacion(constantes.AlineacionIzquierda);
+    conector.texto("75147867J\n");
+    conector.texto("PLAZA PINTOR VELAZQUEZ 2 LOCAL\n");
+    conector.texto("SANTA FE, 18320\n");
+    conector.texto("858693302\n");
     conector.feed(1);
     conector.establecerJustificacion(constantes.AlineacionCentro);
 
     //Client info
     conector.establecerEnfatizado(1);
-    conector.texto("DATOS DEL CLIENTE\n\n");
+    conector.texto("DATOS DEL PEDIDO\n\n");
     conector.establecerEnfatizado(0);
     conector.establecerJustificacion(constantes.AlineacionIzquierda);
     const [deliveryInfo] = deliveryOptions;
@@ -160,12 +221,9 @@ const generateDocument = (orderInput, conector, constantes) => {
     paymentMethod.name &&
       conector.texto(`Metodo de pago: ${paymentMethod.name}\n`);
     conector.establecerJustificacion(constantes.AlineacionCentro);
-    conector.texto(line);
-    conector.feed(2);
     conector.establecerJustificacion(constantes.AlineacionIzquierda);
 
     // Order Info
-    conector.texto("Origen: APP\n");
     orderInput.id && conector.texto(`Id: ${orderInput.id}\n`);
     orderInput.createdAt &&
       conector.texto(
@@ -229,8 +287,11 @@ const generateDocument = (orderInput, conector, constantes) => {
         products.forEach((sandwich) =>
           conector.texto(`${textSandwidch(sandwich)}\n`)
         );
+      } else if (component === "shopping-cart.salad") {
+        products.forEach((sandwich) =>
+          conector.texto(`${textSalad(sandwich)}\n`)
+        );
       } else if (
-        component === "shopping-cart.salad" ||
         component === "shopping-cart.beverage" ||
         component === "shopping-cart.dessert" ||
         component === "shopping-cart.side"
