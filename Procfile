@@ -1,1 +1,1 @@
-web: NODE_ENV=production strapi start
+web: NODE_ENV=development strapi start
