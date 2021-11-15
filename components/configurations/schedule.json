@@ -15,14 +15,6 @@
       "type": "time",
       "required": true
     },
-    "initTimeLastSection": {
-      "type": "time",
-      "required": true
-    },
-    "lastTimiUsualSection": {
-      "type": "time",
-      "required": true
-    },
     "lastTimelatestSection": {
       "type": "time",
       "required": true
