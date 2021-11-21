@@ -12,7 +12,7 @@ module.exports = {
     try {
       const conector = new ConectorPlugin();
       const constant = ConectorPlugin.Constantes;
-      const printerName = "TICKETS1";
+      const printerName = "TICKETS";
 
       generateDocument(orderInput, conector, constant);
 
