@@ -38,6 +38,10 @@
     },
     "supplement": {
       "type": "integer"
+    },
+    "printed": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
