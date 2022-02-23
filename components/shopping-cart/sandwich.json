@@ -10,10 +10,6 @@
     "name": {
       "type": "string"
     },
-    "typeOfBread": {
-      "type": "string",
-      "required": true
-    },
     "price": {
       "type": "decimal"
     },
