@@ -14,7 +14,8 @@ module.exports = {
       entity = await strapi.services.orders.create(data, { files });
     } else {
       entity = await strapi.services.orders.create(ctx.request.body);
-      strapi.services.orders.print(entity);
+      // finally the backend doesn't generate the document for the printer
+      // strapi.services.orders.print(entity);
     }
     return sanitizeEntity(entity, { model: strapi.models.orders });
   },

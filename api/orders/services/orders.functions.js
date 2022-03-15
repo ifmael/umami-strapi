@@ -127,7 +127,9 @@ const textSandwidch = (sandwich) => {
           .join("")
       : "";
 
-    return `${titleAndPrice}\n${tab}- ${sandwich.typeOfBread}\n${textIngredients}`;
+    return `${titleAndPrice}\n${tab}${
+      sandwich.typeOfBread ? `- ${sandwich.typeOfBread}` : ""
+    }\n${textIngredients}`;
   } catch (error) {
     console.log(error);
   }
