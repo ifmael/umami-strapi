@@ -206,8 +206,7 @@ const generateDocument = (orderInput, conector, constantes) => {
     if (deliveryInfo.__component === deliveryLocalComponent) {
       deliveryInfo.name && conector.texto(`Nombre: ${deliveryInfo.name} \n`);
       deliveryInfo.phone && conector.texto(`Telefono: ${deliveryInfo.phone}\n`);
-      deliveryInfo.time &&
-        conector.texto(`Hora: ${deliveryInfo.time.slice(0, 5)}\n`);
+      deliveryInfo.time && conector.texto(`Hora: ${deliveryInfo.time}\n`);
     } else if (deliveryInfo.__component === deliveryHomeComponent) {
       deliveryInfo.street && conector.texto(`Calle: ${deliveryInfo.street}\n`);
       deliveryInfo.number && conector.texto(`Numero: ${deliveryInfo.number}`);
@@ -217,8 +216,7 @@ const generateDocument = (orderInput, conector, constantes) => {
       deliveryInfo.locality &&
         conector.texto(`Localidad: ${deliveryInfo.locality}\n`);
       deliveryInfo.phone && conector.texto(`Telefono: ${deliveryInfo.phone}\n`);
-      deliveryInfo.time &&
-        conector.texto(`Hora: ${deliveryInfo.time.slice(0, 5)}\n`);
+      deliveryInfo.time && conector.texto(`Hora: ${deliveryInfo.time}\n`);
     }
     paymentMethod.name &&
       conector.texto(`Metodo de pago: ${paymentMethod.name}\n`);
